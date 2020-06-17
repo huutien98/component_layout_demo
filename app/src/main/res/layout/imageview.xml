@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainView.ImageVieww">
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:background="@color/colorAccent"
+        android:scaleType="center"
+        android:src="@drawable/profile_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="435dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image2">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#a72b2b" />
+
+            <Button
+                android:id="@+id/btn_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="center"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="centerCrop"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="centerInside"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fitCenter"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fitEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fitEnd"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fitStart"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fitXY"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="#ec000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_main" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
